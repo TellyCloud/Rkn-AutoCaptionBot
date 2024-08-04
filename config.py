@@ -1,9 +1,3 @@
-# (c) @RknDeveloperr
-# Rkn Developer 
-# Don't Remove Credit 😔
-# Telegram Channel @RknDeveloper & @Rkn_Botz
-# Developer @RknDeveloperr
-
 import re, os, time
 id_pattern = re.compile(r'^.\d+$') 
 
@@ -15,21 +9,21 @@ class Rkn_Bots(object):
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
 
     # start_pic
-    RKN_PIC = os.environ.get("RKN_PIC", "https://telegra.ph/file/21a8e96b45cd6ac4d3da6.jpg")
+    RKN_PIC = os.environ.get("RKN_PIC", "https://graph.org/file/15ed1ff6461ae1ad6b7ba.jpg")
 
     # wes response configuration
     BOT_UPTIME = time.time()
     PORT = int(os.environ.get("PORT", "8080"))
 
     # force subs channel ( required.. 😥)
-    FORCE_SUB = os.environ.get("FORCE_SUB", "Rkn_Botz") 
+    FORCE_SUB = os.environ.get("FORCE_SUB", "tellycloud_bots") 
     
     # database config ( required.. 😥)
     DB_NAME = os.environ.get("DB_NAME", "AutoCaption_V05_Bot")     
     DB_URL = os.environ.get("DB_URL", "")
 
     # default caption 
-    DEF_CAP = os.environ.get("DEF_CAP", "<b><a href='https//:t.me/Rkn_Botz'>{file_name} Main Telegram Channel: @RknDeveloper</a></b>",
+    DEF_CAP = os.environ.get("DEF_CAP", "<b><a href='https//:t.me/tellycloud_bots'>{file_name} Main Telegram Channel: @tellycloud_bots</a></b>",
     )
 
     # sticker Id
@@ -38,8 +32,3 @@ class Rkn_Bots(object):
     # admin id  ( required.. 😥)
     ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
     
-
-# Rkn Developer 
-# Don't Remove Credit 😔
-# Telegram Channel @RknDeveloper & @Rkn_Botz
-# Developer @RknDeveloperr
